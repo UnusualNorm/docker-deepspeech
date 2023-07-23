@@ -11,7 +11,8 @@
   "author": "Unusual Norm",
   "license": "MIT",
   "dependencies": {
-    "node": "^15.14.0",
-    "deepspeech": "^0.9.3"
+    "deepspeech": "^0.9.3",
+    "deepspeech-tflite": "^0.9.3",
+    "node": "^15.14.0"
   }
 }

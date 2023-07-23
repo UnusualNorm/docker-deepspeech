@@ -1,6 +1,12 @@
 const http = require("http");
-const Ds = require("deepspeech");
-const model = new Ds.Model("deepspeech.pbmm");
+const Ds =
+  process.arch === "arm64"
+    ? require("deepspeech-tflite")
+    : require("deepspeech");
+
+const model = new Ds.Model(
+  `deepspeech.${process.arch === "arm64" ? "tflite" : "pbmm"}`
+);
 
 const validBeamWidth = (aBeamWidth) =>
   typeof aBeamWidth === "number" && aBeamWidth !== NaN && aBeamWidth > 0;

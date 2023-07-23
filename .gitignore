@@ -1,5 +1,6 @@
 node_modules/
 deepspeech.pbmm
+deepspeech.tflite
 
 # For testing
 audio.wav
