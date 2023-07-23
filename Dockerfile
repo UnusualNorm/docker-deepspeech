@@ -1,4 +1,4 @@
-FROM node:12
+FROM node:15
 WORKDIR /app
 COPY . .
 RUN npm install --production --freeze-lockfile
