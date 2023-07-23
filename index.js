@@ -1,8 +1,5 @@
 const http = require("http");
-const Ds =
-  process.arch === "arm64"
-    ? require("deepspeech-tflite")
-    : require("deepspeech");
+const Ds = require("deepspeech");
 
 const model = new Ds.Model(
   `deepspeech.${process.arch === "arm64" ? "tflite" : "pbmm"}`
