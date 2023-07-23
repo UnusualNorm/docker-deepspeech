@@ -1,0 +1,10 @@
+.devcontainer/
+.git/
+.github/
+node_modules/
+audio.wav
+.dockerignore
+.gitignore
+deepspeech.pbmm
+Dockerfile
+test.js

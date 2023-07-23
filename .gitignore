@@ -1,0 +1,5 @@
+node_modules/
+deepspeech.pbmm
+
+# For testing
+audio.wav

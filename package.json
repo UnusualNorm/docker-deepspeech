@@ -1,0 +1,16 @@
+{
+  "name": "docker-deepspeech",
+  "version": "1.0.0",
+  "description": "Mozilla DeepSpeech in a simple Docker container.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node .",
+    "test": "node test.js"
+  },
+  "keywords": [],
+  "author": "Unusual Norm",
+  "license": "MIT",
+  "dependencies": {
+    "deepspeech": "^0.9.3"
+  }
+}
