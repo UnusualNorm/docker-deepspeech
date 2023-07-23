@@ -20,7 +20,7 @@ jobs:
       - name: Prepare
         id: prep
         run: |
-          DOCKER_IMAGE=unusualnorm/docker-deepspeech
+          DOCKER_IMAGE=unusualnorm/deepspeech
           VERSION=main
 
           if [[ $GITHUB_REF =~ ^refs/tags/ ]]; then
