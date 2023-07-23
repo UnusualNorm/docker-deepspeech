@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  deepspeech:
+    # image: unusualnorm/docker-deepspeech:latest
+    build: .
+    ports:
+      - 28346:28346
+    volumes:
+      - type: bind
+        source: ./deepspeech.pbmm
+        target: /app/deepspeech.pbmm
+        read_only: true
+    restart: always
