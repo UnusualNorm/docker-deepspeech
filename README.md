@@ -11,7 +11,7 @@ Optional query parameters are:
 - extended (default: false)
   - num_results (default: 1)
 
-If extended is true, the response will be a json object the the following type:
+If extended is true, the response will be a json object of the the following type:
 
 ```typescript
 {
